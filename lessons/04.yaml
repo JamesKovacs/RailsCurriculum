@@ -15,8 +15,8 @@ steps: |
   
   Open up a terminal window and try out the following.
   
-      $ mkdir railsbridge
-      $ cd railsbridge
+      $ mkdir calgary_rails
+      $ cd calgary_rails
       $ rails new suggestotron
       $ cd suggestotron
       $ ls
@@ -26,9 +26,9 @@ steps: |
 explanation: |
 
   * 'mkdir' stands for make directory (folder).
-    * We've made a folder called railsbridge
+    * We've made a folder called calgary_rails
   * 'cd' stands for change directory.
-    * 'cd railsbridge' makes railsbridge our current directory.
+    * 'cd calgary_rails' makes calgary_rails our current directory.
   * 'rails new' creates a new rails project with the name you give.
     * In this case we told it to create a new project called suggestotron.
     * We'll go into detail on what it created shortly.

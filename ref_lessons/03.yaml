@@ -1,0 +1,57 @@
+content: |
+    ## Other Tools to help you learn Ruby
+
+    ### ri
+
+    ri is a tool to look up ruby documentation:
+
+        $ ri String.split
+        = String.split
+
+        (from ruby core)
+        ------------------------------------------------------------------------------
+          str.split(pattern=$;, [limit])   => anArray
+
+        ------------------------------------------------------------------------------
+
+        Divides str into substrings based on a delimiter, returning an array of
+        these substrings.
+        ...
+
+    You can do a lot with it:
+
+    * `ri Class` -- looks up the class documentation and shows all the methods available.
+    * `ri Class.method` -- looks up a specific method on a class or module.
+    * `ri method` -- searches all classes for matching methods
+
+    If running ri doesn't work and you've installed ruby using rvm, try
+    running this command first:
+
+        $ rvm docs generate
+
+    ### irb
+
+    We've already introduced irb above, but it can't be stressed enough
+    that having an interactive live session with ruby is invaluable. You
+    can learn a lot from it.
+
+    Add this to a file called ~/.irbrc:
+
+    <pre class="code">
+    :::ruby
+    class Object
+      def pim inherited = false
+        self.class.public_instance_methods(inherited).sort -
+          Object.public_instance_methods
+      end
+    end
+    </pre>
+
+    Now you can do stuff like:
+
+        $ irb
+        >> "blah".pim
+        => ["%", "*", "+", "<<", "<=>", "[]", "[]=", "bytes", "bytesize", ...]
+
+    All of these methods are available for any string. You can then use
+    `ri` to look up the method documentation. It is a great way to find goodies!

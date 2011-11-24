@@ -11,6 +11,7 @@ goal: |
   * use and understand collections
   * use loops
 
+
 steps: |
   
   Open up a terminal window and try the following:
@@ -36,9 +37,11 @@ steps: |
         puts f
       end
 
-      if my_variable > 1 then
+      if my_variable > 1
         puts "YAY!"
       end
+
+
 
 explanation: |
   
