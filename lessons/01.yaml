@@ -36,7 +36,7 @@ content: |
   
   This is just a rough guideline, not a mandate. Some steps you'll go
   over and some you'll go under. It'll all work out by the end of the
-  day... unless I really screwed something up. :D
+  day... unless we really screwed something up. :D
 
   ### Requirements
 
@@ -47,7 +47,6 @@ content: |
   * bundler
   * sqlite
   * the text editor of your choice
-
 
 
   You can verify that you have everything working by trying this out in your terminal (Command, Command prompt, DOS prompt):
