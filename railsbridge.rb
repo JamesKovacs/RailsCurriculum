@@ -1,12 +1,13 @@
 #!/usr/bin/ruby -w
 
-ENV['GEM_HOME'] = "tmp/isolate/ruby-1.8"
-ENV.delete 'GEM_PATH'
+#ENV['GEM_HOME'] = "tmp/isolate/ruby-1.8"
+#ENV.delete 'GEM_PATH'
 
 require 'rubygems'
 require 'sinatra'
 require 'erb'
 require 'yaml'
+
 
 require 'sinatra/base'
 
