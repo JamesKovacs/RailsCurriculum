@@ -1,34 +1,26 @@
---- 
+---
 section_title: Getting Started
 section_content: |
-  
+
   ![start page](/img/Start_page.png)
 
 goal_title: Creating Your New Application
 goal: |
 
-  
+
   Let's get started! By the end of this step, we'll have a
   brand-spankin'-new (empty) rails app.
 
 steps: |
-  
+
   Open up a terminal window and try out the following.
-  
-      $ mkdir railsbridge
-      $ cd railsbridge
+
       $ rails new suggestotron
       $ cd suggestotron
       $ ls
-  
-  If you have _any_ problems, contact a TA immediately.
 
 explanation: |
 
-  * 'mkdir' stands for make directory (folder).
-    * We've made a folder called railsbridge
-  * 'cd' stands for change directory.
-    * 'cd railsbridge' makes railsbridge our current directory.
   * 'rails new' creates a new rails project with the name you give.
     * In this case we told it to create a new project called suggestotron.
     * We'll go into detail on what it created shortly.
