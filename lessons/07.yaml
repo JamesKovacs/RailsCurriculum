@@ -1,23 +1,32 @@
---- 
+---
 goal_title: Deploy to heroku
 goal: |
-  
+
   OK. We've got an empty app and it has been added to git. What now? _**Ship it!**_
 
 steps: |
-  
+  * Open `Gemfile` in your text editor
+  * Change `gem 'sqlite3'` to `gem 'sqlite3', :groups => [:development, :test]`
+  * Add `gem 'pg', :group => :production`
+  * Add the following line to the bottom: `gem 'heroku'`
+
   In your terminal, try:
-  
+
+      $ bundle install
+      $ git commit -am 'Added Heroku support'
       $ heroku create --stack cedar
       $ git push heroku master
       $ heroku open
 
 explanation: |
-  
+
+  * `gem 'pg', :group => :production` changes databases to PostgreSQL for production.
+  * `gem 'heroku'` adds Heroku support.
+  * `bundle install` installs software your application needs and prepares it to run.
   * `heroku create --stack cedar` registers a new application on heroku's system using the cedar stack.
   * `git push` takes all changes you've committed locally and pushes them to heroku.
   * `heroku open` opens the new application in your browser.
-  
+
   While I realize that at this point this isn't all that exciting, the
   point is that it doesn't get more difficult than this as we add more
   functionality to the application. Your typical process will look like:
