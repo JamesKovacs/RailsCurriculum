@@ -7,4 +7,5 @@ gem "sinatra"
 gem "rdiscount"
 gem 'rack-codehighlighter'
 gem 'coderay'
+gem 'heroku'
 
