@@ -8,13 +8,13 @@ steps: |
   
   In your terminal, try:
   
-      $ heroku create
+      $ heroku create --stack cedar
       $ git push heroku master
       $ heroku open
 
 explanation: |
   
-  * `heroku create` registers a new application on heroku's system.
+  * `heroku create --stack cedar` registers a new application on heroku's system using the cedar stack.
   * `git push` takes all changes you've committed locally and pushes them to heroku.
   * `heroku open` opens the new application in your browser.
   

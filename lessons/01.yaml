@@ -17,35 +17,31 @@ content: |
   You've sketched up an initial screenshot of what you want it to look like:
 
   ![screenshot](/img/finished_app.png)
-  
+
   ### Meta-Goal
 
-  When you have completed today's goal of getting the basic
+  When you have completed the goal of getting the basic
   application online you should understand:
 
   * Basic Ruby syntax
-  * How to test your Ruby code (irb)
+  * How to explore Ruby code (irb)
   * How to go from requirements to a new working Rails application
   * How to get your application online
   * The basic tools a RoR developer uses (source control, editor, console, local server)
 
   ### Schedule
 
-    * ~1 hour Installation
-    * ~2 hours Ruby
-    * ~4 hours Rails
-    * ~2 hours Q/A
-     
-  This is just a rough guideline, not a mandate. Some steps you'll go
-  over and some you'll go under. It'll all work out by the end of the
-  day... unless we really screwed something up. :D
+    * ~1 hours Ruby
+    * ~2 hours Rails
+
+  This is just a rough guideline, not a mandate.
 
   ### Requirements
 
   We're going to be working with:
 
-  * ruby 1.9.2
-  * rails 3.1.x
+  * ruby 1.9.3
+  * rails 3.2.x
   * bundler
   * sqlite
   * the text editor of your choice
@@ -73,7 +69,7 @@ content: |
       * One for this content
       * One for interacting with your app.
       * One for Rails API (http://api.rubyonrails.org/)
-  * Open your text editor and _do not ever close it_. We're not quitters. 
+  * Open your text editor and _do not ever close it_. We're not quitters.
   * Hide all extra applications. Turn off twitter, IM, and all other distractions.
 
   By minimizing the number of things you interact with, you reduce the
@@ -84,7 +80,7 @@ content: |
   ### Format
 
   Each lesson will look like this:
-  
+
   <div style="background: white; border: 1px solid black; margin: 2em; padding: 1em;">
   <h2>Section Title</h2>
   <div class="top-goal">
